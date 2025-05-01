@@ -1,355 +1,361 @@
 :root {
-    --offwhite: #f8f9fa;
-    --ocre: #c28e0e;
+  --offwhite: #f8f9fa;
+  --ocre: #c28e0e;
 }
 
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: var(--offwhite);
-    color: #333;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: var(--offwhite);
+  color: #333;
 }
 
 /* Header */
 header {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-  }
-  
-.header-container {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-sizing: border-box; /* Importante para manter padding dentro do tamanho */
+  position: relative;
+  height: 400px;
+  overflow: hidden;
 }
 
-.logo img{
-    height: 60px;
-    width: auto;
-    object-fit: contain;  
+.header-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box; /* Importante para manter padding dentro do tamanho */
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .menu-button {
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-  }
-  
-  .menu-button i {
-    font-size: 2.5rem;
-    color: #c28e0e;
-  }
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.menu-button i {
+  font-size: 2.5rem;
+  color: #c28e0e;
+}
 
 .menu {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: var(--ocre);
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 8px;
-    z-index: 20;
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: var(--ocre);
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 20;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 /* Slider */
 .slider img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .slider img.active {
-    opacity: 1;
-    z-index: 1;
-  }
-  
-
-/* Títulos */
-h1, h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 1s ease-in-out;
 }
 
-h1{
-font-size: 30px;
+.slider img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Títulos */
+h1,
+h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 h2 {
-    font-family: 'Abel', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 /* Luxo Carrossel */
 .luxo-carousel-wrapper {
-    width: 100%;
-    max-width: 960px; /* ou o tamanho do total visível */
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .luxo-carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 1rem;
-  }
-  
-  .luxo-item {
-    flex: 0 0 300px;
-    opacity: 0.4;
-    transform: scale(0.85);
-    transition: all 0.5s ease;
-  }
-  
-  .luxo-item.active {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
-  .luxo-item img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
+  width: 100%;
+  max-width: 960px; /* ou o tamanho do total visível */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.luxo-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 1rem;
+}
+
+.luxo-item {
+  flex: 0 0 300px;
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: all 0.5s ease;
+}
+
+.luxo-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.luxo-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Pedras */
 .pedras {
-    padding: 2rem;
-  }
-  
-  .pedra-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 900px;
-    margin: 2rem auto;
-    gap: 2rem;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease;
-  }
-  
-  .pedra-item.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .pedra-item img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+  padding: 2rem;
+}
 
+.pedra-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  gap: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
 
-  
-  .pedra-item .text {
-    max-width: 400px;
-    padding: 0 1rem;
-  }
-  
-  .pedra-item.esquerda {
-    flex-direction: row;
-    text-align: left;
-  }
-  
-  .pedra-item.direita {
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-  
+.pedra-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pedra-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pedra-item .text {
+  max-width: 400px;
+  padding: 0 1rem;
+}
+
+.pedra-item.esquerda {
+  flex-direction: row;
+  text-align: left;
+}
+
+.pedra-item.direita {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
 .ver-mais {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background: var(--ocre);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: var(--ocre);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 /* Modais */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-    background: var(--offwhite);
-    padding: 2rem;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    text-align: center;
+  background: var(--offwhite);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  text-align: center;
 }
 
 .modal-content .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 2rem;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* Avaliação */
 /* Avaliação - Carrossel */
 .avaliacao-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 2rem 0;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 2rem 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .avaliacao-slider-container {
-    width: 300px; /* Largura fixa para a imagem central */
-    overflow: hidden;
+  width: 300px; /* Largura fixa para a imagem central */
+  overflow: hidden;
 }
 
 .avaliacao-slider {
-    display: flex;
-    transition: transform 0.5s ease;
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
 .avaliacao-slider img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
 .avaliacao-slider img.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .avaliacao-carousel button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--ocre);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--ocre);
 }
 
 .carousel-button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--ocre);
-    z-index: 10;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--ocre);
+  z-index: 10;
 }
 
 /* Contatos */
 .contatos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .contatos a i {
-    font-size: 2rem;
-    color: var(--ocre);
+  font-size: 2rem;
+  color: var(--ocre);
 }
 
 /* Responsivo */
 @media (max-width: 1024px) {
-    .slider img {
-        height: 300px;
-    }
-
-    .luxo .carousel img {
-        height: 250px;
-    }
-
-    .pedras {
-        padding: 0 1rem;
-    }
-
-    .pedras .pedra-item {
-        flex-direction: column;
-        text-align: center;
-        margin: 2rem 0;
-    }
-
-    .pedras .left .text,
-    .pedras .right .text {
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    .pedras .left img,
-    .pedras .right img {
-        width: 100%;
-    }
-
-    .contatos {
-        gap: 1rem;
-    }
-    .avaliacao-slider {
-        width: 600px; /* 2 imagens em telas menores */
-    }
-
-}
-@media (max-width: 768px) {
-    .pedra-item {
-      flex-direction: column !important;
-      text-align: center !important;
-    }
-  
-    .pedra-item .text {
-      padding: 1rem 0;
-    }
+  .slider img {
+    height: 300px;
   }
 
-@media (max-width: 600px) {
-    .menu {
-        width: 37%;
-    }
-    .avaliacao-slider-container {
-        width: 250px;
-    }
-    .avaliacao-slider img {
-        width: 250px;
-        height: 250px;
-    }
+  .luxo .carousel img {
+    height: 250px;
+  }
+
+  .pedras {
+    padding: 0 1rem;
+  }
+
+  .pedras .pedra-item {
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .pedras .left .text,
+  .pedras .right .text {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .pedras .left img,
+  .pedras .right img {
+    width: 100%;
+  }
+
+  .contatos {
+    gap: 1rem;
+  }
+  .avaliacao-slider {
+    width: 600px; /* 2 imagens em telas menores */
+  }
 }
+@media (max-width: 768px) {
+  .pedra-item {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .pedra-item .text {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    width: 37%;
+  }
+  .avaliacao-slider-container {
+    width: 250px;
+  }
+  .avaliacao-slider img {
+    width: 250px;
+    height: 250px;
+  }
+}
+.pedra-item {
+  flex-direction: column !important;
+  text-align: center !important;
+}
+
+.pedra-item .text {
+  padding: 1rem 0;
+}
+
