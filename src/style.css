@@ -350,12 +350,3 @@ h2 {
     height: 250px;
   }
 }
-.pedra-item {
-  flex-direction: column !important;
-  text-align: center !important;
-}
-
-.pedra-item .text {
-  padding: 1rem 0;
-}
-
