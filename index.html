@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KMW Mármares</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400&family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./src/img/logo.png" alt="Logo da Marmoraria" />
+        </div>
+        <button
+          class="menu-button"
+          onclick="toggleMenu()"
+          aria-label="Abrir Menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <nav class="menu" id="menu">
+          <a href="#luxo">Pedras de Luxo</a>
+          <a href="#pedras">Pedras</a>
+          <a href="#avaliacoes">Avaliação</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+
+      <div class="slider" id="slider">
+        <img src="./src/img/header (1).jfif" class="active" alt="Slide 1" />
+        <img src="./src/img/header (2).jfif" alt="Slide 2" />
+        <img src="./src/img/header (3).jfif" alt="Slide 3" />
+      </div>
+    </header>
+
+    <main>
+      <section id="luxo" class="luxo">
+        <h1>Pedras de Luxo</h1>
+        <div class="luxo-carousel-wrapper">
+          <div class="luxo-carousel">
+            <div class="luxo-item active">
+              <img src="./src/img/header (1).jfif" alt="Luxo 1" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (2).jfif" alt="Luxo 2" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (3).jfif" alt="Luxo 3" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (1).jfif" alt="Luxo 4" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (2).jfif" alt="Luxo 5" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (3).jfif" alt="Luxo 6" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (1).jfif" alt="Luxo 7" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (2).jfif" alt="Luxo 8" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (3).jfif" alt="Luxo 9" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (1).jfif" alt="Luxo 10" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (2).jfif" alt="Luxo 11" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (3).jfif" alt="Luxo 12" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (1).jfif" alt="Luxo 13" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (2).jfif" alt="Luxo 14" />
+            </div>
+            <div class="luxo-item">
+              <img src="./src/img/header (3).jfif" alt="Luxo 15" />
+            </div>
+            <!-- Adicione mais conforme necessário -->
+          </div>
+        </div>
+      </section>
+
+      <section id="pedras" class="pedras">
+        <h1>Pedras</h1>
+
+        <!-- GRANITO - ESQUERDA -->
+        <div class="pedra-item esquerda">
+          <img src="./src/img/header (3).jfif" alt="Granito" class="esquerda" />
+          <div class="text">
+            <h3>Granito</h3>
+            <p>Resistente e elegante para diversos ambientes.</p>
+          </div>
+        </div>
+
+        <!-- MÁRMORE - DIREITA -->
+        <div class="pedra-item direita">
+            <img src="./src/img/header (3).jfif" alt="Limestone" />
+          <div class="text">
+            <h3>Mármore Negro</h3>
+            <p>Sofisticação incomparável com alto brilho.</p>
+          </div>
+          
+        </div>
+      </section>
+        <!-- QUARTZO - ESQUERDA -->
+        <div class="pedra-item esquerda">
+          <img src="./src/img/header (3).jfif" alt="Quartzo" />
+          <div class="text">
+            <h3>Quartzo</h3>
+            <p>Ideal para bancadas modernas e duráveis.</p>
+          </div>
+        </div>
+
+        <!-- LIMESTONE - DIREITA -->
+        <div class="pedra-item direita">
+            <img src="./src/img/header (3).jfif" alt="Limestone" />
+          <div class="text">
+            <h3>Limestone</h3>
+            <p>Pedra clara e rústica, muito usada em fachadas.</p>
+          </div>
+        </div>
+        <!-- DEKTON - ESQUERDA -->
+        <div class="pedra-item esquerda">
+            <img src="./src/img/header (3).jfif" alt="Dekton">
+            <div class="text">
+              <h3>Dekton</h3>
+              <p>Alta tecnologia e resistência para áreas externas.</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="avaliacao" id="avaliacao">
+        <h1>Avaliação</h1>
+        <div class="avaliacao-carousel">
+          <button class="carousel-button" onclick="prevAvaliacao()">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <div class="avaliacao-slider-container">
+            <div class="avaliacao-slider">
+              <img src="./src/img/header (3).jfif" alt="Avaliação 1" class="active" />
+              <img src="./src/img/header (3).jfif" alt="Avaliação 2" />
+              <img src="./src/img/header (3).jfif" alt="Avaliação 3" />
+              <img src="./src/img/header (3).jfif" alt="Avaliação 4" />
+              <img src="./src/img/header (3).jfif" alt="Avaliação 5" />
+            </div>
+          </div>
+          <button class="carousel-button" onclick="nextAvaliacao()">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="orcamento" id="orcamento">
+        <h1>Quer um Orçamento?</h1>
+        <h2>Entre em Contato</h2>
+        <div class="contatos">
+          <a href="http://wa.me/5511939411742"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="mailto:mdousilva@gmail.com"><i class="bi bi-envelope"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
