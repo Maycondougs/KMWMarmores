@@ -95,7 +95,7 @@ carousel.addEventListener("transitionend", () => {
 
 window.addEventListener("load", () => {
   updateCarousel(true);
-  setInterval(nextLuxoSlide, 3000);
+  setInterval(nextLuxoSlide, 4000);
 });
 
 window.addEventListener("resize", () => updateCarousel(true));
