@@ -338,7 +338,9 @@ h2 {
     flex: 0 0 90%;
   }
   
-
+  .luxo-item img {
+    max-height: 300px;
+  }
 
   .pedra-item {
     flex-direction: column !important;
@@ -361,7 +363,7 @@ h2 {
   }
   
   .luxo-item img {
-
+    max-height: 250px;
     border-radius: 8px;
   }
 
