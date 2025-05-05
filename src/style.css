@@ -330,6 +330,16 @@ h2 {
   }
 }
 @media (max-width: 768px) {
+  .luxo-item {
+    flex: 0 0 90%;
+  }
+  
+  .luxo-item.active {
+    flex: 0 0 90%;
+  }
+  
+
+
   .pedra-item {
     flex-direction: column !important;
     text-align: center !important;
@@ -341,6 +351,20 @@ h2 {
 }
 
 @media (max-width: 600px) {
+
+  .luxo {
+    padding: 1rem 0.5rem;
+  }
+  
+  .luxo-carousel {
+    gap: 0.5rem;
+  }
+  
+  .luxo-item img {
+
+    border-radius: 8px;
+  }
+
   .menu {
     width: 37%;
   }
