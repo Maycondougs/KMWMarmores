@@ -210,17 +210,6 @@ h2 {
 }
 
 
-/* Remove restrições em tela cheia */
-video:fullscreen,
-video:-webkit-full-screen {
-  width: auto !important;
-  height: auto !important;
-  max-width: none !important;
-  max-height: none !important;
-  object-fit: unset !important;
-}
-
-
 /* Pedras */
 .pedras {
   padding: 2rem;
@@ -425,9 +414,12 @@ video:-webkit-full-screen {
   .contatos {
     gap: 1rem;
   }
-  .avaliacao-slider {
-    width: 600px; /* 2 imagens em telas menores */
+
+  .avaliacao-slider-container {
+    max-width: 260px;
   }
+
+
 
 }
 @media (max-width: 768px) {
@@ -465,6 +457,10 @@ video:-webkit-full-screen {
 
   .pedra-item .text {
     padding: 1rem 0;
+  }
+
+  .avaliacao-slider-container {
+    max-width: 240px;
   }
 }
 
@@ -507,11 +503,22 @@ video:-webkit-full-screen {
   .menu {
     width: 37%;
   }
-  .avaliacao-slider-container {
-    width: 250px;
+  .avaliacao-carousel {
+    flex-direction: column;
+    gap: 10px;
   }
+
+  .avaliacao-slider-container {
+    max-width: 90%;
+  }
+
   .avaliacao-slider img {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-button {
+    position: static;
+    margin: 0.5rem;
   }
 }
