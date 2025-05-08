@@ -107,7 +107,7 @@ h2 {
 /* Luxo Carrossel */
 .luxo-carousel-wrapper {
   width: 100%;
-  max-width: 960px; /* ou o tamanho do total visível */
+  max-width: auto; /* ou o tamanho do total visível */
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -138,6 +138,88 @@ h2 {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Produção*/
+/* Produçõa - Carrossel */
+/* Produção - Vídeo Carrossel */
+.producao-carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+.producao-slider-container {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.producao-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.video-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.video-item video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.video-item.horizontal video {
+  width: auto;
+  height: 450px;
+}
+
+/* Botões de navegação */
+.carousel-button {
+
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: var(--ocre);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button:first-of-type {
+  left: 10px;
+}
+
+.carousel-button:last-of-type {
+  right: 10px;
+}
+
+
+/* Remove restrições em tela cheia */
+video:fullscreen,
+video:-webkit-full-screen {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: unset !important;
+}
+
 
 /* Pedras */
 .pedras {
@@ -278,6 +360,7 @@ h2 {
   z-index: 10;
 }
 
+
 /* Contatos */
 .contatos {
   display: flex;
@@ -299,6 +382,23 @@ h2 {
 
   .luxo .carousel img {
     height: 250px;
+  }
+
+  .producao-slider-container {
+    max-width: 90%;
+  }
+
+  .video-item video {
+    max-width: 700px;
+    height: auto;
+  }
+
+  .video-item.horizontal video {
+    height: 400px;
+  }
+
+  .carousel-button {
+    font-size: 2rem;
   }
 
   .pedras {
@@ -328,6 +428,7 @@ h2 {
   .avaliacao-slider {
     width: 600px; /* 2 imagens em telas menores */
   }
+
 }
 @media (max-width: 768px) {
   .luxo-item {
@@ -342,6 +443,21 @@ h2 {
     max-height: 300px;
   }
 
+  .producao-slider-container {
+    max-width: 95%;
+  }
+
+  .video-item video {
+    max-width: 100%;
+  }
+
+  .video-item.horizontal video {
+    height: 350px;
+  }
+
+  .carousel-button {
+    font-size: 1.8rem;
+  }
   .pedra-item {
     flex-direction: column !important;
     text-align: center !important;
@@ -366,7 +482,28 @@ h2 {
     max-height: 250px;
     border-radius: 8px;
   }
+  .producao-carousel {
+    flex-direction: column;
+  }
 
+  .video-item {
+    padding: 0.5rem;
+  }
+
+  .video-item video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-item.horizontal video {
+    height: 280px;
+  }
+
+  .carousel-button {
+    position: static;
+    transform: none;
+    margin: 1rem;
+  }
   .menu {
     width: 37%;
   }
