@@ -37,6 +37,28 @@ function nextSlide() {
 
 setInterval(nextSlide, 3000);
 
+//Produção 
+// CARROSSEL DE VÍDEOS - PRODUÇÃO
+let videoIndex = 0;
+const videoItems = document.querySelectorAll('#producaoSlider .video-item');
+const totalVideos = videoItems.length;
+const producaoSlider = document.querySelector('#producaoSlider');
+
+function mostrarVideo(index) {
+  videoItems.forEach((item) => item.classList.remove('active'));
+  videoItems[index].classList.add('active');
+  const offset = -index * 100;
+  producaoSlider.style.transform = `translateX(${offset}%)`;
+}
+
+function mudarVideo(direcao) {
+  videoIndex = (videoIndex + direcao + totalVideos) % totalVideos;
+  mostrarVideo(videoIndex);
+}
+
+// Inicializa
+mostrarVideo(videoIndex);
+
 // ===================
 // CARROSSEL PEDRAS DE LUXO - INFINITO + CORREÇÃO
 // ===================
