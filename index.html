@@ -20,14 +20,11 @@
         <div class="logo">
           <img src="./src/img/logo.png" alt="Logo da Marmoraria" />
         </div>
-        <button
-          class="menu-button"
-          onclick="toggleMenu()"
-          aria-label="Abrir Menu"
-        >
-          <i class="bi bi-list"></i>
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Abrir Menu">
+          <i class="bi bi-list menu-icon"></i>
+          <i class="bi bi-x close-icon" style="display: none;"></i>
         </button>
-        <nav class="menu" id="menu">
+        <nav class="menu" id="menu" aria-label="Navegação principal">
           <a href="#Servicos">Serviços</a>
           <a href="#producao">Produção</a>
           <a href="#pedras">Pedras</a>
@@ -38,8 +35,8 @@
 
       <div class="slider" id="slider">
         <img src="./src/img/header.jpg" class="active" alt="Slide 1" />
-        <img src="./src/img/header 2.jpg" alt="Slide 2" />
-        <img src="./src/img/header 3.jpg" alt="Slide 3" />
+        <img src="./src/img/header.jpg" alt="Slide 2" />
+        <img src="./src/img/header.jpg" alt="Slide 3" />
       </div>
     </header>
 
