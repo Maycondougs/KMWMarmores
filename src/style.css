@@ -378,6 +378,35 @@ h2 {
   color: var(--ocre);
 }
 
+/* Adicione isso ao seu arquivo style.css */
+
+.pedras {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.img-container img {
+  width: 300px; /* Aumentei o tamanho para melhor visualização */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-container {
+  max-width: 600px; /* Limita a largura do texto para melhor legibilidade */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* Responsivo */
 @media (max-width: 1024px) {
   .slider img {
@@ -504,7 +533,7 @@ h2 {
 
 
   .logo img {
-    height: 250px;
+    height: 225px;
     width: auto;
     object-fit: contain;
   }
