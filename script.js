@@ -1,15 +1,24 @@
 // MENU MOBILE TOGGLE
-const menuButton = document.querySelector(".menu-button");
-const menu = document.querySelector(".menu");
-
-menuButton.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
-
 function toggleMenu() {
   const menu = document.getElementById("menu");
-  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  const menuButton = document.querySelector(".menu-button");
+  const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+  
+  // Alternar visibilidade
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
+    menuButton.setAttribute("aria-expanded", "false");
+    document.querySelector(".menu-icon").style.display = "block";
+    document.querySelector(".close-icon").style.display = "none";
+  } else {
+    menu.style.display = "flex";
+    menuButton.setAttribute("aria-expanded", "true");
+    document.querySelector(".menu-icon").style.display = "none";
+    document.querySelector(".close-icon").style.display = "block";
+  }
+
 }
+
 
 // SLIDER DO HEADER
 let currentHeaderSlide = 0;
