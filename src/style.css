@@ -13,7 +13,7 @@ body {
 /* Header */
 header {
   position: relative;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -25,12 +25,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0px 2rem;
   box-sizing: border-box; /* Importante para manter padding dentro do tamanho */
 }
 
 .logo img {
-  height: 60px;
+  height: 350px;
   width: auto;
   object-fit: contain;
 }
