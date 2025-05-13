@@ -521,7 +521,7 @@ h2 {
   }
 
   .avaliacao-slider-container {
-    max-width: 240px;
+    max-width: 260px;
   }
     .avaliacao-slider img {
   width: 260px;
@@ -592,12 +592,13 @@ h2 {
   }
 
   .avaliacao-slider-container {
-    max-width: 90%;
+    max-width: 260px;
   }
 
   .avaliacao-slider img {
-    width: 100%;
-    height: auto;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
   }
 
   .carousel-button {
