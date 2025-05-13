@@ -461,7 +461,13 @@ h2 {
 
   .avaliacao-slider-container {
     max-width: 260px;
+    max-height: 260px;
   }
+
+  .avaliacao-slider img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
 
 
 
@@ -516,6 +522,11 @@ h2 {
 
   .avaliacao-slider-container {
     max-width: 240px;
+  }
+    .avaliacao-slider img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
   }
 }
 
