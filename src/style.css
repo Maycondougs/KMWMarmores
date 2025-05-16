@@ -559,7 +559,7 @@ h2 {
   
   .luxo-item img {
     max-height: 250px;
-    border-radius: 8px;
+    border-radius: 15px;
   }
   .producao-carousel {
     flex-direction: column;
